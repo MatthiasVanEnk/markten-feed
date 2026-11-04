@@ -6,4 +6,4 @@ De bedragen van metalen en crypto staan in EUR. Indexstanden blijven in hun eige
 
 Ruwe link, zodra de repo bestaat:
 
-`https://raw.githubusercontent.com/MatthiasVanEnnk/markten-feed/main/markten.json`
+`https://raw.githubusercontent.com/MatthiasVanEnk/markten-feed/main/markten.json`
