@@ -24,8 +24,11 @@ Afsluitcodes: 0 bestand geschreven, 2 bestand geschreven maar push mislukt,
 from __future__ import annotations
 
 import argparse
+import base64
 import json
 import math
+import os
+import shutil
 import socket
 import subprocess
 import time
@@ -511,23 +514,39 @@ def remember(line: str) -> None:
     LOG.write_text("\n".join(existing[-400:]) + "\n", encoding="utf-8")
 
 
+def gh_command() -> str | None:
+    found = shutil.which("gh")
+    if found:
+        return found
+    candidate = os.environ.get("ProgramFiles", r"C:\Program Files") + r"\GitHub CLI\gh.exe"
+    return candidate if Path(candidate).exists() else None
+
+
 def push_json(stamp: str) -> str | None:
-    if not (ROOT / ".git").exists():
-        return "geen git-repo naast het script"
-    def run(args: list[str]) -> subprocess.CompletedProcess[str]:
-        return subprocess.run(args, cwd=ROOT, capture_output=True, text=True, timeout=90)
-    added = run(["git", "add", "markten.json"])
-    if added.returncode != 0:
-        return (added.stderr or added.stdout).strip() or "git add mislukt"
-    committed = run(["git", "commit", "-m", f"koersen {stamp}"])
-    combined = (committed.stdout + committed.stderr).lower()
-    if committed.returncode != 0 and "nothing to commit" not in combined:
-        return (committed.stderr or committed.stdout).strip() or "git commit mislukt"
-    if "nothing to commit" in combined:
-        return None
-    pushed = run(["git", "push"])
-    if pushed.returncode != 0:
-        return (pushed.stderr or pushed.stdout).strip() or "git push mislukt"
+    """Zet markten.json via de GitHub-API. gh gebruikt de al aanwezige login."""
+    gh = gh_command()
+    if gh is None:
+        return "gh niet gevonden"
+    repo = "repos/MatthiasVanEnk/markten-feed/contents/markten.json"
+    current = subprocess.run(
+        [gh, "api", repo, "--jq", ".sha"],
+        capture_output=True, text=True, timeout=60,
+    )
+    if current.returncode != 0:
+        return (current.stderr or current.stdout).strip() or "sha ophalen mislukt"
+    body = {
+        "message": f"koersen {stamp}",
+        "content": base64.b64encode(OUTPUT.read_bytes()).decode("ascii"),
+        "sha": current.stdout.strip(),
+        "branch": "main",
+    }
+    updated = subprocess.run(
+        [gh, "api", "--method", "PUT", repo, "--input", "-"],
+        input=json.dumps(body),
+        capture_output=True, text=True, timeout=60,
+    )
+    if updated.returncode != 0:
+        return (updated.stderr or updated.stdout).strip() or "publiceren mislukt"
     return None
 
 
