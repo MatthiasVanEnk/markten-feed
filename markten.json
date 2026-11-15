@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "gegenereerd_utc": "2026-11-15T10:05:07Z",
+  "gegenereerd_utc": "2026-11-15T13:05:03Z",
   "eur_usd": {
     "waarde": 1.1052,
     "bron": "ECB via Frankfurter",
@@ -22,7 +22,7 @@
       "verandering_24u_pct": 0.026,
       "verandering_bron": "Yahoo Finance GC=F (slot tegenover vorig slot)",
       "bron": "gold-api.com, omgerekend met Swissquote EUR/USD",
-      "tijdstempel_utc": "2026-11-15T10:04:56Z",
+      "tijdstempel_utc": "2026-11-15T13:04:57Z",
       "tweede_bron": "Swissquote",
       "tweede_bron_bevestigd": true,
       "afwijking_pct": 0.1851
@@ -32,7 +32,7 @@
       "verandering_24u_pct": -1.886,
       "verandering_bron": "Yahoo Finance SI=F (slot tegenover vorig slot)",
       "bron": "gold-api.com, omgerekend met Swissquote EUR/USD",
-      "tijdstempel_utc": "2026-11-15T10:04:56Z",
+      "tijdstempel_utc": "2026-11-15T13:04:56Z",
       "tweede_bron": "Swissquote",
       "tweede_bron_bevestigd": true,
       "afwijking_pct": 0.113
@@ -42,7 +42,7 @@
       "verandering_24u_pct": -2.019,
       "verandering_bron": "Yahoo Finance PL=F (slot tegenover vorig slot)",
       "bron": "gold-api.com, omgerekend met Swissquote EUR/USD",
-      "tijdstempel_utc": "2026-11-15T10:04:59Z",
+      "tijdstempel_utc": "2026-11-15T13:05:00Z",
       "tweede_bron": "Swissquote",
       "tweede_bron_bevestigd": true,
       "afwijking_pct": 0.0342
@@ -52,7 +52,7 @@
       "verandering_24u_pct": 1.624,
       "verandering_bron": "Yahoo Finance PA=F (slot tegenover vorig slot)",
       "bron": "gold-api.com, omgerekend met Swissquote EUR/USD",
-      "tijdstempel_utc": "2026-11-15T10:04:58Z",
+      "tijdstempel_utc": "2026-11-15T13:04:58Z",
       "tweede_bron": "Swissquote",
       "tweede_bron_bevestigd": true,
       "afwijking_pct": 0.03
@@ -61,127 +61,127 @@
   "crypto": {
     "ranglijst_bevestigd": true,
     "tweede_bron_bevestigd": true,
-    "max_afwijking_pct": 0.098,
+    "max_afwijking_pct": 0.2147,
     "top10": [
       {
         "rang": 1,
         "symbool": "BTC",
         "naam": "Bitcoin",
         "type": "crypto",
-        "eur": 59398.0,
-        "verandering_24u_pct": -2.8276,
-        "marktwaarde_eur": 1194861836964,
+        "eur": 59435.0,
+        "verandering_24u_pct": -1.9046,
+        "marktwaarde_eur": 1195382120152,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.0049
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.0229
       },
       {
         "rang": 2,
         "symbool": "ETH",
         "naam": "Ethereum",
         "type": "crypto",
-        "eur": 1657.45,
-        "verandering_24u_pct": -4.4631,
-        "marktwaarde_eur": 202605867883,
+        "eur": 1664.19,
+        "verandering_24u_pct": -3.0485,
+        "marktwaarde_eur": 203399280084,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.0042
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.0936
       },
       {
         "rang": 3,
         "symbool": "USDT",
         "naam": "Tether",
         "type": "stablecoin",
-        "eur": 0.906712,
-        "verandering_24u_pct": 0.0243,
-        "marktwaarde_eur": 159042078224,
+        "eur": 0.906769,
+        "verandering_24u_pct": 0.0253,
+        "marktwaarde_eur": 159045495522,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.0288
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.0258
       },
       {
         "rang": 4,
         "symbool": "BNB",
         "naam": "BNB",
         "type": "crypto",
-        "eur": 541.22,
-        "verandering_24u_pct": -3.563,
-        "marktwaarde_eur": 71183733181,
+        "eur": 542.4,
+        "verandering_24u_pct": -2.1108,
+        "marktwaarde_eur": 71330780869,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.0323
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.0011
       },
       {
         "rang": 5,
         "symbool": "USDC",
         "naam": "USDC",
         "type": "stablecoin",
-        "eur": 0.906875,
-        "verandering_24u_pct": 0.0054,
-        "marktwaarde_eur": 62688227308,
+        "eur": 0.906947,
+        "verandering_24u_pct": 0.0135,
+        "marktwaarde_eur": 62682913978,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.0515
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.0559
       },
       {
         "rang": 6,
         "symbool": "XRP",
         "naam": "XRP",
         "type": "crypto",
-        "eur": 0.876466,
-        "verandering_24u_pct": -2.6122,
-        "marktwaarde_eur": 55644234731,
+        "eur": 0.879927,
+        "verandering_24u_pct": -1.8192,
+        "marktwaarde_eur": 55890001537,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.0154
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.1552
       },
       {
         "rang": 7,
         "symbool": "SOL",
         "naam": "Solana",
         "type": "crypto",
-        "eur": 65.3,
-        "verandering_24u_pct": -5.2156,
-        "marktwaarde_eur": 38628948873,
+        "eur": 66.21,
+        "verandering_24u_pct": -3.2224,
+        "marktwaarde_eur": 39170554331,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.0415
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.1694
       },
       {
         "rang": 8,
         "symbool": "TRX",
         "naam": "TRON",
         "type": "crypto",
-        "eur": 0.279099,
-        "verandering_24u_pct": -1.7431,
-        "marktwaarde_eur": 26529375008,
+        "eur": 0.278523,
+        "verandering_24u_pct": -1.8016,
+        "marktwaarde_eur": 26471348179,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.098
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.1178
       },
       {
         "rang": 9,
         "symbool": "HYPE",
         "naam": "Hyperliquid",
         "type": "crypto",
-        "eur": 61.92,
-        "verandering_24u_pct": -1.7423,
-        "marktwaarde_eur": 14722477304,
+        "eur": 61.98,
+        "verandering_24u_pct": 0.3238,
+        "marktwaarde_eur": 14734326697,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.0764
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.0583
       },
       {
         "rang": 10,
         "symbool": "ZEC",
         "naam": "Zcash",
         "type": "crypto",
-        "eur": 827.06,
-        "verandering_24u_pct": -0.1757,
-        "marktwaarde_eur": 14097557473,
+        "eur": 834.05,
+        "verandering_24u_pct": 4.2372,
+        "marktwaarde_eur": 14214442905,
         "bron": "CoinGecko",
-        "tijdstempel_utc": "2026-11-15T10:03:56.000Z",
-        "afwijking_pct": 0.0183
+        "tijdstempel_utc": "2026-11-15T13:04:49.000Z",
+        "afwijking_pct": 0.2147
       }
     ]
   },
